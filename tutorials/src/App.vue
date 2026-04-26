@@ -20,5 +20,6 @@ import Sidebar from './components/sidebar/Sidebar.vue'
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  width: calc(100% - 296px);
 }
 </style>
