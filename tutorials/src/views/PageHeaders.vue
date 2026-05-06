@@ -1,11 +1,7 @@
-<script setup lang="ts">
-import formFields from '@/data/forms'
-</script>
-
 <template>
   <section>
-    <h1>HTML Forms</h1>
-    <template v-for="field in formFields" :key="field.id">
+    <h1>Page Headers</h1>
+    <template v-for="field in pageHeaders" :key="field.id">
       <section class="container">
         <div class="container-info">
           <h2 class="container-info__title">{{ field.title }}</h2>
@@ -26,3 +22,6 @@ import formFields from '@/data/forms'
     </template>
   </section>
 </template>
+<script setup>
+import pageHeaders from '@/data/pageHeaders'
+</script>

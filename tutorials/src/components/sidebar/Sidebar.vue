@@ -20,7 +20,7 @@
   </aside>
 </template>
 <script setup>
-import { sidebarItems } from '@/data'
+import sidebarItems from '@/data/sidebar'
 import { ref } from 'vue'
 const currentMenu = ref(0)
 </script>

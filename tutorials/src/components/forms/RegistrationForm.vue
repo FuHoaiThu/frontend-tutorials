@@ -25,11 +25,12 @@
         aria-label="password"
       />
       <div class="actions">
-        <div>
-          <input />
-        </div>
+        <p>I agree to <a href="">terms and conditions</a></p>
         <button class="button--blue">Register</button>
-        <button class="button--simple">Already have an account?</button>
+        <p>
+          <a class="button--simple" href="">Already have an account?</a>
+          <a href="/">Back to Homepage</a>
+        </p>
       </div>
     </form>
   </div>
@@ -61,6 +62,31 @@
       height: 40px;
       font-size: 14px;
       line-height: 1.5;
+    }
+    .actions {
+      color: white;
+      font-size: 14px;
+
+      P {
+        margin: 0 5px 0 0;
+      }
+      a {
+        color: white;
+        margin-right: 4px;
+      }
+      .button--blue {
+        outline: none;
+        border: none;
+        width: 100%;
+        margin: 16px 0;
+        background-color: #1f53c5;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 4px;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+      }
     }
   }
 }

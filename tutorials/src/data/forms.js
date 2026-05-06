@@ -1,21 +1,7 @@
-import LoginForm from './components/forms/LoginForm.vue'
-import RegistrationForm from './components/forms/RegistrationForm.vue'
+import LoginForm from '@/components/forms/LoginForm.vue'
+import RegistrationForm from '@/components/forms/RegistrationForm.vue'
 
-export const sidebarItems = [
-  {
-    name: 'Home',
-    id: 0,
-    icon: 'fa-solid fa-house',
-    path: '/',
-  },
-  {
-    name: 'Forms',
-    id: 1,
-    icon: 'fa-brands fa-wpforms',
-    path: '/forms',
-  },
-]
-export const formFields = [
+const formFields = [
   {
     id: 0,
     title: 'Make a login form for beginner',
@@ -34,3 +20,4 @@ export const formFields = [
     component: RegistrationForm,
   },
 ]
+export default formFields
