@@ -1,28 +1,11 @@
 <script setup lang="ts">
 import formFields from '@/data/forms'
+import CommonView from './CommonView.vue';
 </script>
 
 <template>
   <section>
     <h1>HTML Forms</h1>
-    <template v-for="field in formFields" :key="field.id">
-      <section class="container">
-        <div class="container-info">
-          <h2 class="container-info__title">{{ field.title }}</h2>
-          <p class="container-info__description">{{ field.description }}</p>
-          <p class="container-info__source">
-            Source:
-            <a
-              :href="field.source"
-              class="container-info__source-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              >{{ field.sourceName }}</a
-            >
-          </p>
-        </div>
-        <component :is="field.component" />
-      </section>
-    </template>
+    <common-view :data="formFields"/>
   </section>
 </template>

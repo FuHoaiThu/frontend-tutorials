@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import Forms from '../views/FormsView.vue'
 import { ROUTER_NAMES } from './routerConstant'
 import PageHeaders from '@/views/PageHeaders.vue'
+import LandingPages from '@/views/LandingPages.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -20,6 +22,11 @@ const router = createRouter({
       path: '/page-header',
       name: ROUTER_NAMES.PAGE_HEADERS,
       component: PageHeaders,
+    },
+    {
+      path: '/landing-page',
+      name: ROUTER_NAMES.LANDING_PAGES,
+      component: LandingPages,
     },
   ],
 })

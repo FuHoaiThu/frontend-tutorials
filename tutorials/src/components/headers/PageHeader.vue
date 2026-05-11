@@ -34,6 +34,7 @@ h3 {
 p {
   font-weight: bold;
   font-size: 60px;
+  margin: 1em;
 }
 a {
   text-decoration: none;

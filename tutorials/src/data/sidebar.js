@@ -17,5 +17,11 @@ const sidebarItems = [
     icon: 'fa-brands fa-wpforms',
     path: '/page-header',
   },
+  {
+    name: 'Landing Pages',
+    id: 3,
+    icon: 'fa-regular fa-file',
+    path: '/landing-page'
+  }
 ]
 export default sidebarItems
