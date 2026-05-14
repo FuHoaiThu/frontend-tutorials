@@ -21,7 +21,13 @@ const sidebarItems = [
     name: 'Landing Pages',
     id: 3,
     icon: 'fa-regular fa-file',
-    path: '/landing-page'
-  }
+    path: '/landing-page',
+  },
+  {
+    name: 'Cards',
+    id: 4,
+    icon: 'fa-regular fa-address-card',
+    path: '/cards',
+  },
 ]
 export default sidebarItems

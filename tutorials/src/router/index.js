@@ -4,6 +4,7 @@ import Forms from '../views/FormsView.vue'
 import { ROUTER_NAMES } from './routerConstant'
 import PageHeaders from '@/views/PageHeaders.vue'
 import LandingPages from '@/views/LandingPages.vue'
+import Cards from '@/views/Cards.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: '/landing-page',
       name: ROUTER_NAMES.LANDING_PAGES,
       component: LandingPages,
+    },
+    {
+      path: '/cards',
+      name: ROUTER_NAMES.CARDS,
+      component: Cards,
     },
   ],
 })
