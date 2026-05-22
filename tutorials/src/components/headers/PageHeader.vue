@@ -10,6 +10,7 @@
         </div>
       </div>
     </div>
+    <p class="notification">Responsive design is not yet implemented.</p>
   </header>
 </template>
 <style lang="css" scoped>
@@ -24,6 +25,9 @@
 .header-content {
   width: 82%;
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 h3 {
   width: 100%;
@@ -45,5 +49,11 @@ a {
   padding: 4px 20px;
   border-radius: 30px;
   margin: 10px;
+}
+.notification {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 }
 </style>

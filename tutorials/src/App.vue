@@ -21,5 +21,9 @@ import Sidebar from './components/sidebar/Sidebar.vue'
   overflow-x: hidden;
   overflow-y: auto;
   width: calc(100% - 296px);
+  @media screen and (max-width: 768px) {
+    left: 0;
+    width: 100%;
+  }
 }
 </style>

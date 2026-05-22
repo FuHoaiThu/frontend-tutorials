@@ -15,6 +15,11 @@
           applications, handling everything from the visual layout to the functional backend.
         </p>
       </div>
+      <ul class="card-actions">
+        <li><font-awesome-icon icon="fa-brands fa-facebook-f" /></li>
+        <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
+        <li><font-awesome-icon icon="fa-brands fa-google" /></li>
+      </ul>
     </div>
   </div>
 </template>
@@ -60,6 +65,36 @@
     .card-info__description {
       font-size: 16px;
       text-align: justify;
+    }
+  }
+  .card-actions {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    li {
+      width: 45px;
+      height: 45px;
+      background: rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(6px);
+      cursor: pointer;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 20px;
+        height: 20px;
+        color: #374151;
+      }
+      &:hover {
+        background: rgba(255, 255, 255, 0.6);
+        svg {
+          color: #111827;
+        }
+      }
     }
   }
 }

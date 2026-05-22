@@ -81,5 +81,8 @@ const currentMenu = ref(0)
       font-weight: 600;
     }
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 </style>
