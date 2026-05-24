@@ -5,6 +5,7 @@ import { ROUTER_NAMES } from './routerConstant'
 import PageHeaders from '@/views/PageHeaders.vue'
 import LandingPages from '@/views/LandingPages.vue'
 import Cards from '@/views/Cards.vue'
+import Buttons from '@/views/Buttons.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,11 @@ const router = createRouter({
       path: '/cards',
       name: ROUTER_NAMES.CARDS,
       component: Cards,
+    },
+    {
+      path: '/buttons',
+      name: ROUTER_NAMES.BUTTONS,
+      component: Buttons,
     },
   ],
 })

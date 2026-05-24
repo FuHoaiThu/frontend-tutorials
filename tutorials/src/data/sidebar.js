@@ -29,5 +29,11 @@ const sidebarItems = [
     icon: 'fa-regular fa-address-card',
     path: '/cards',
   },
+  {
+    name: 'Buttons',
+    id: 5,
+    icon: 'fa-solid fa-mobile-button',
+    path: '/buttons',
+  },
 ]
 export default sidebarItems

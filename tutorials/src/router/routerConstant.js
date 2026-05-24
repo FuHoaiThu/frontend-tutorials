@@ -4,4 +4,5 @@ export const ROUTER_NAMES = {
   PAGE_HEADERS: 'PageHeaders',
   LANDING_PAGES: 'LandingPages',
   CARDS: 'Cards',
+  BUTTONS: 'Buttons',
 }
